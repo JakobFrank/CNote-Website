@@ -30,15 +30,53 @@ function changeB()
 	{
 		document.body.style.backgroundColor = "brown";
 	}
-
+	
+}
+var backgroundColorCount2 = 1;
+function changeB2()
+{
+	backgroundColorCount2 = backgroundColorCount2 +1;
+	if(backgroundColorCount2 > 5)
+	{
+		backgroundColorCount2 = 0;
+	}
+	if (backgroundColorCount2 == 0)
+	{
+		document.body.style.backgroundColor = "#FA9A50";
+	}
+	if(backgroundColorCount2 == 1)
+	{
+		document.body.style.backgroundColor = "lightgreen";
+	}
+	if(backgroundColorCount2 == 2)
+	{
+		document.body.style.backgroundColor = "hotpink";
+	}
+	if(backgroundColorCount2 == 3)
+	{
+		document.body.style.backgroundColor = "purple";
+	}
+	if(backgroundColorCount == 4)
+	{
+		document.body.style.backgroundColor = "green";
+	}
+	if(backgroundColorCount2 == 5)
+	{
+		document.body.style.backgroundColor = "brown";
+	}
+	
 }
 
 function check(form)
 {
 if(form.uname.value == "RickyRocks" && form.psw.value == "whataguy")
   {
-    window.open('home.html')
+    window.open('userpage.html')
   }
+ if (form.uname.value == "ChuckB" && form.psw.value == "spyguy") 
+ {
+ 	window.open('otheruser.html')
+ }
  else
  {
    alert("Error Password or Username")
