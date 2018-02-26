@@ -30,7 +30,7 @@ function changeB()
 	{
 		document.body.style.backgroundColor = "brown";
 	}
-	
+
 }
 var backgroundColorCount2 = 1;
 function changeB2()
@@ -64,22 +64,22 @@ function changeB2()
 	{
 		document.body.style.backgroundColor = "brown";
 	}
-	
+
 }
 
 function check(form)
 {
 if(form.uname.value == "RickyRocks" && form.psw.value == "whataguy")
   {
-    window.open('userpage.html')
-  }
- if (form.uname.value == "ChuckB" && form.psw.value == "spyguy") 
+		window.open('userpage.html')
+	}
+ if (form.uname.value == "ChuckB" && form.psw.value == "spyguy")
  {
- 	window.open('otheruser.html')
+	 window.open('otheruser.html')
  }
  else
  {
-   alert("Error Password or Username")
-  }
+	 alert("Error Password or Username")
+ }
 
 }
