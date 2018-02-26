@@ -69,17 +69,16 @@ function changeB2()
 
 function check(form)
 {
-if(form.uname.value == "RickyRocks" && form.psw.value == "whataguy")
+	if (form.uname.value == "RickyRocks" && form.psw.value == "whataguy")
   {
-		window.open('userpage.html')
+		window.open('userpage.html');
 	}
- if (form.uname.value == "ChuckB" && form.psw.value == "spyguy")
- {
-	 window.open('otheruser.html')
- }
- else
- {
-	 alert("Error Password or Username")
- }
-
+	if (form.uname.value == "ChuckB" && form.psw.value == "spyguy")
+	{
+	 window.open('otheruser.html');
+  }
+	else
+  {
+	 alert("Error Password or Username");
+  }
 }
