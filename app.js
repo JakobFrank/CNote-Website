@@ -73,7 +73,7 @@ function check(form)
   {
 		window.open('userpage.html');
 	}
-	if (form.uname.value == "ChuckB" && form.psw.value == "spyguy")
+	else if (form.uname.value == "ChuckB" && form.psw.value == "spyguy")
 	{
 	 window.open('otheruser.html');
   }
