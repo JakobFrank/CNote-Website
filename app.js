@@ -30,8 +30,8 @@ function changeB()
 	{
 		document.body.style.backgroundColor = "brown";
 	}
-
 }
+
 var backgroundColorCount2 = 1;
 function changeB2()
 {
@@ -64,7 +64,6 @@ function changeB2()
 	{
 		document.body.style.backgroundColor = "brown";
 	}
-
 }
 
 function check(form)
