@@ -30,8 +30,8 @@ function changeB()
 	{
 		document.body.style.backgroundColor = "brown";
 	}
-}
 
+}
 var backgroundColorCount2 = 1;
 function changeB2()
 {
@@ -64,20 +64,54 @@ function changeB2()
 	{
 		document.body.style.backgroundColor = "brown";
 	}
+
 }
 
 function check(form)
 {
-	if (form.uname.value == "RickyRocks" && form.psw.value == "whataguy")
+if (form.uname.value == "RickyRocks" && form.psw.value == "whataguy")
   {
-		window.open('userpage.html');
-	}
-	else if (form.uname.value == "ChuckB" && form.psw.value == "spyguy")
-	{
-	 window.open('otheruser.html');
+    window.open('userpage.html');
   }
-	else
-  {
-	 alert("Error Password or Username");
+ else if (form.uname.value == "ChuckB" && form.psw.value == "spyguy")
+ {
+ 	window.open('otheruser.html');
+ }
+ else
+ {
+   alert("Error Password or Username");
   }
+}
+
+function Notifications()
+{
+	$element.toggle(shouldElementbeVisible);
+}
+
+var SharedwithChuck = new Boolean(false);
+
+function Share_Ricky()
+{
+	prompt("Who do you want to share with?");
+	SharedwithChuck = true;
+}
+
+function Share_Chuck()
+{
+	prompt("Who do you want to share with?");
+	var SharedwithRicky = new Boolean(true);
+}
+
+function Add_Comment_Chuck()
+{
+	prompt("Comment:");
+	var CommentChuck = new Boolean(true);
+}
+
+var CommentRicky = new Boolean(false);
+
+function Add_Comment_Ricky()
+{
+	prompt("Comment:");
+	CommentRicky = true;
 }

@@ -23,24 +23,32 @@ function check(form)
 {
 if(form.nbname.value == "Psych 201")
   {
-    window.open('otheruser1.html')
+    window.open('otheruser1.html');
   }
  else
  {
-   alert("Not an Acceptable Notebook Name")
+   alert("Not an Acceptable Notebook Name");
   }
 
 }
 
 function check2(form)
 {
-if(form.nbname.value == "EECS 212")
-  {
-    window.open('otheruser2.html')
-  }
+ if(form.nbname.value == "EECS 212")
+ {
+   window.open('otheruser2.html');
+ }
  else
  {
-   alert("Not an Acceptable Notebook Name")
-  }
+   alert("Not an Acceptable Notebook Name");
+ }
+}
 
+function Notifications(shouldElementsbeVisible) {
+  if(shouldElementBeVisible) {
+    $element.show();
+  }
+  else {
+    $element.hide();
+  }  
 }
