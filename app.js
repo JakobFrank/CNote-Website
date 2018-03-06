@@ -67,7 +67,7 @@ function changeB2()
 
 }
 
-function check(form)
+function login(form)
 {
 if (form.uname.value == "RickyRocks" && form.psw.value == "whataguy")
   {
@@ -83,35 +83,38 @@ if (form.uname.value == "RickyRocks" && form.psw.value == "whataguy")
   }
 }
 
-function Notifications()
-{
-	$element.toggle(shouldElementbeVisible);
-}
-
-var SharedwithChuck = new Boolean(false);
+var SharedwithChuck = Boolean(false);
 
 function Share_Ricky()
 {
 	prompt("Who do you want to share with?");
 	SharedwithChuck = true;
+	localStorage.setItem("SharedwithChuck", SharedwithChuck);
 }
+
+var SharedwithRicky = Boolean(false);
 
 function Share_Chuck()
 {
 	prompt("Who do you want to share with?");
-	var SharedwithRicky = new Boolean(true);
+	SharedwithRicky = true;
+	localStorage.setItem("SharedwithRicky", SharedwithRicky);
 }
+
+var CommentChuck = Boolean(false);
 
 function Add_Comment_Chuck()
 {
 	prompt("Comment:");
-	var CommentChuck = new Boolean(true);
+	CommentChuck = true;
+	localStorage.setItem("CommentChuck", CommentChuck);
 }
 
-var CommentRicky = new Boolean(false);
+var CommentRicky = Boolean(false);
 
 function Add_Comment_Ricky()
 {
 	prompt("Comment:");
 	CommentRicky = true;
+	localStorage.setItem("CommentChuck", CommentRicky);
 }
