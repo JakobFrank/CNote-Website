@@ -45,22 +45,15 @@ function check2(form)
 }
 
 function Notifications() {
-  element = document.getElementById("SharedwithRicky");
-  if(localStorage.getItem("SharedwithRicky")) {
-    element.style.display= "block";
-  }
-  else {
-    element.style.display= "none";
-  }
   element = document.getElementById("SharedwithChuck");
-  if(SharedwithChuck) {
+  if(localStorage.getItem("SharedwithChuck")) {
     element.style.display= "block";
   }
   else {
     element.style.display= "none";
   }
-  element = document.getElementById("CommentChuck");
-  if(CommentChuck) {
+  element = document.getElementById("SharedwithRicky");
+  if(SharedwithRicky) {
     element.style.display= "block";
   }
   else {
@@ -68,6 +61,13 @@ function Notifications() {
   }
   element = document.getElementById("CommentRicky");
   if(CommentRicky) {
+    element.style.display= "block";
+  }
+  else {
+    element.style.display= "none";
+  }
+  element = document.getElementById("CommentChuck");
+  if(CommentChuck) {
     element.style.display= "block";
   }
   else {

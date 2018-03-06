@@ -3,11 +3,10 @@
         <title>My Home Page</title>
         <link rel="stylesheet" type="text/css" href="otheruser.css"/>
     </head>
-      <body>
+      <body onload="Notifications()">
         <div id = "entire-container">
           <div id="mySidenav" class="sidenav">
             <a href="userpage.html"><img class="avatar" src="cnote.png" alt="logo"></a>
-
             <button onclick="document.getElementById('id00').style.display='block'" style="width:auto;">Create a Notebook</button>
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Join a Class</button>
             <button  onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Create Group</button>
@@ -90,14 +89,13 @@
           <div id="myNotifcations" class="sidenote">
             <a href="personal2.html"><img class="avatar" src="Account.png" alt="logo"></a>
             <h1>Notifications</h1>
-            <div id="Notifications" onload="Notifications(SharedwithChuck)"> Ricky has shared a notebook with you! </div>
-            <div id="Notifications"> You have shared a notebook with Ricky! </div>
-            <div id="Notifications"> Ricky commented on a shared notebook! </div>
-            <div id="Notifications"> You commented on a shared notebook! </div>
+            <div id="SharedwithChuck"> Ricky has shared a notebook with you! </div>
+            <div id="SharedwithRicky"> You have shared a notebook with Ricky! </div>
+            <div id="CommentRicky"> Ricky commented on a shared notebook! </div>
+            <div id="CommentChuck"> You commented on a shared notebook! </div>
           </div>
         </div>
+        <script src="otheruserpage.js"></script>
+        <script src="app.js"></script>
       </body>
-<script src="otheruserpage.js">
-
-</script>
 </html>
