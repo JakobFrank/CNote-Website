@@ -4,11 +4,15 @@
     <title>Online Collaborative Text Editor</title>
   <link href="css/bootstrap.min.css" rel="stylesheet"></link>
     <link href="app2.css" rel="stylesheet"></link>
+<style>
+            @import url('https://fonts.googleapis.com/css?family=Karla:bold|Montserrat');
+        </style>
   </head>
   <body onload="Notifications()">
      <div id = "overdash" class = "overdash">
             <div id = "left" ><a href="javascript:history.back()"><img class="avatar" src="cnote.png" alt="logo"></a> </div>
            <div id = "center">
+             <div class = "buttontext">
         <li> <button id = "Font" class = "btn">Font </button> </li>
         <li> <button id = "Bold" class = "btn">Bold</button></li>
         <li> <button id = "Ital" class = "btn">Italicize</button></li>
@@ -16,8 +20,9 @@
         <li> <button id = "Highlight" class = "btn">Highlight</button></li>
         <li> <button id = "Bullet Points" class = "btn">Bullet Points</button></li>
         <li> <button id = "Background_Button" onclick="changeB()" class = "btn">Background</button></li>
-         <li><button id = "Add_Comment" onclick="Add_Comment_Ricky()" class = "btn">Add Comment</button></li>
-        <li> <button id = "Share_Notebook" onclick="Share_Ricky()" class = "btn">Share</button></li>
+         <li><button id = "Add_Comment" onclick="Add_Comment_Chuck()" class = "btn">Add Comment</button></li>
+        <li> <button id = "Share_Notebook" onclick="Share_Chuck()" class = "btn">Share</button></li>
+             </div>
     </div>
             <div id = "right">
             <div class = "dropdown">
@@ -51,7 +56,7 @@ Argue about correctness of programs
 Construct and define objects
 Domino Principle: Line up any number of dominos in a row; know the first one over and over and they will all fall.
 P(k): kth domino falls
-Two Requirements: 
+Two Requirements:
 For all k: P(k) -> P(k+1)
 First domino falls i.e. P1 is true.
 To prove: For all k E N, predicate P(k) is true.
@@ -66,13 +71,14 @@ The base case is very important!
        <div class="sidenote">
                   <div id = "notecore" class="note">
                   <h2>Notifications</h2>
-                  <div id="SharedwithRicky" > Chuck has shared a notebook <br>with you! </div>
-                  <div id="SharedwithChuck"> You have shared a notebook <br>with Chuck! </div>
-                  <div id="CommentChuck"> Chuck commented on a shared <br>notebook! </div>
-                  <div id="CommentRicky"> You commented on a shared <br>notebook! </div>
+                  
+                  <div id="SharedwithRicky" > This notebook is shared by <br>RickyRocks and ChuckB. </div>
+                  <div id="SharedwithChuck">  Ricky has shared a notebook <br>with you!</div>
+                  <div id="CommentChuck"> RickyR: Thanks for sharing your <br> notes with me! </div>
+                  <div id="CommentRicky"> Ricky commented on a shared <br>notebook! </div>
+                  
                   </div>
             </div>
-        </div>
 <script src = "userpage.js"></script>
 <script src="app.js"></script>
   </body>

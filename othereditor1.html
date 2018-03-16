@@ -4,11 +4,15 @@
     <title>Online Collaborative Text Editor</title>
   <link href="css/bootstrap.min.css" rel="stylesheet"></link>
     <link href="app.css" rel="stylesheet"></link>
+<style>
+            @import url('https://fonts.googleapis.com/css?family=Karla:bold|Montserrat');
+        </style>
   </head>
   <body onload="Notifications()">
      <div id = "overdash" class = "overdash">
             <div id = "left" ><a href="javascript:history.back()"><img class="avatar" src="cnote.png" alt="logo"></a> </div>
            <div id = "center">
+		   <div class = "buttontext">
         <li> <button id = "Font" class = "btn">Font </button> </li>
         <li> <button id = "Bold" class = "btn">Bold</button></li>
         <li> <button id = "Ital" class = "btn">Italicize</button></li>
@@ -16,8 +20,9 @@
         <li> <button id = "Highlight" class = "btn">Highlight</button></li>
         <li> <button id = "Bullet Points" class = "btn">Bullet Points</button></li>
         <li> <button id = "Background_Button" onclick="changeB()" class = "btn">Background</button></li>
-         <li><button id = "Add_Comment" onclick="Add_Comment_Ricky()" class = "btn">Add Comment</button></li>
-        <li> <button id = "Share_Notebook" onclick="Share_Ricky()" class = "btn">Share</button></li>
+         <li><button id = "Add_Comment" onclick="Add_Comment_Chuck()" class = "btn">Add Comment</button></li>
+        <li> <button id = "Share_Notebook" onclick="Share_Chuck()" class = "btn">Share</button></li>
+		   </div>
     </div>
             <div id = "right">
             <div class = "dropdown">
@@ -49,10 +54,10 @@ Can't measure everyone, used to draw inferences about a larger group (population
 
 Samples: A subset of scores from a population
 
-Population: A collection of measurements that share a common characteristic 
+Population: A collection of measurements that share a common characteristic
 
 Random Sampling: helps eliminate bias in the samples (choosing participants)
-Random Assignment: everyone has an equal chance to be in any testing group (grouping participants) 
+Random Assignment: everyone has an equal chance to be in any testing group (grouping participants)
 
 Measurement Scales:
 	Four Properties:
@@ -64,7 +69,7 @@ Measurement Scales:
 			1 unit difference remains constant
 		Absolute Zero Property
 			0 represents absence of something
-Quote of the Day “so zero has to mean zero?!?” - anonymous student 
+Quote of the Day “so zero has to mean zero?!?” - anonymous student
 
         </textarea>
       </div>
@@ -72,11 +77,13 @@ Quote of the Day “so zero has to mean zero?!?” - anonymous student
        <div class="sidenote">
                   <div id = "notecore" class="note">
                   <h2>Notifications</h2>
-                  <div id="SharedwithRicky" > Chuck has shared a notebook <br>with you! </div>
-                  <div id="SharedwithChuck"> You have shared a notebook <br>with Chuck! </div>
-                  <div id="CommentChuck"> Chuck commented on a shared <br>notebook! </div>
-                  <div id="CommentRicky"> You commented on a shared <br>notebook! </div>
-                  </div>
+			  
+                  <div id="SharedwithRicky" > You have shared a notebook <br>with Ricky! </div>
+                  <div id="SharedwithChuck">  Ricky has shared a notebook <br>with you!</div>
+                  <div id="CommentChuck"> You commented on a shared <br>notebook! </div>
+                  <div id="CommentRicky"> Ricky commented on a shared <br>notebook! </div>
+			  
+                
             </div>
         </div>
 <script src = "userpage.js"></script>
