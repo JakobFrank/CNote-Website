@@ -5,54 +5,163 @@ body {
   line-height: 20px;
   margin: 0;
   padding: 0;
-  background-color:lightgreen;
+  background-color:#3CB371;
 }
 
-.header {
-  height: 80px;
+#overdash
+{
+  margin-top:15px;
+}
+
+#left
+{
+  float:left;
+  width:20%;
+}
+
+#center
+{
+  float:left;
+  width:60%;
+}
+
+#right
+{
+  float:left;
+width:20%;
+}
+
+#left img {
+  margin-left:25px;
+  width:120px;
+  height:120px;
+}
+
+#right img
+{
+  width:100px;
+  height:100px;
+}
+
+#center {
+  height: 100px;
   display: flex;
   align-items: center;
 }
 
-.header li {
+#center li {
+  align-items:center;
   padding:20px;
   display:inline;
+  width:100%;
 }
 
-.header_h1 {
-  margin: 20px;
-  padding: 10px;
-  color: #424242;
+
+.doc
+{
+  width:60%;
+  margin:0;
+  padding:0;
+}
+.empty
+{
+  width:20%;
 }
 
-.header_h1 img{
-  padding-top:50px;
-  width:150px;
-  height:150px;
+#center button {
+  height: 40px;
 }
 
-.student_icon img {
-  padding-top:50px;
-  width:100px;
-  height:100px;
-  padding-left:50px;
+#center li{
+  padding:10px;
+}
+
+#Add_Comment {
+  background-color: #008CBA;
+}
+
+#Share_Notebook {
+  background-color: #008CBA;
+}
+
+#Background_Button
+{
+  background-color: #008CBA;
 }
 
 .background-ribbon {
   height: 200px;
-  padding-left: 1200px;
-  margin-top: 50px;
   display: inline-block;
-}
 
-.text-editor {
-  width: 60%;
-  padding-top: 10px;
+}
+.sidenote
+{
+
+  width:20%;
+}
+.text-editor{
+ padding-top: 10px;
   padding-right: 28px;
   padding-bottom: 60px;
   padding-left: 28px;
-  min-height: 600px;
+  width: 90%;
+  height:100%;
   background: #fff;
   margin: 0 auto;
-  transform: translateY(-150px);
 }
+.text-editor textarea{
+  width:100%;
+  height:95%;
+}
+
+.dropbtn {
+    margin-right:40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    float:right;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+
+.show {display:block;}
+
+.sidenote
+{
+  float:left;
+}
+ .doc, .empty
+{
+  float:left;
+}
+.sidenote{
+  float:right;
+}
+
+.sidenote h2{border-bottom:2px solid black;}
+
+.show {display:block;}

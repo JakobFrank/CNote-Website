@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>My Home Page</title>
+        <link rel="stylesheet" type="text/css" href="otheruser.css"/>
+    </head>
+    <body onload="Notifications()">
+         <div id = "overdash" class = "overdash">
+            <div id = "left" ><a href="#"><img class="avatar" src="cnote.png" alt="logo"></a> </div>
+           <div id = "center"><h1>Dashboard<h1></div>
+            <div id = "right">
+            <div class = "dropdown">
+              <img onclick="myFunction()" class="dropbtn" src="Account.png" alt="user">
+                  <div id="myDropdown" class ="dropdown-content">
+                   <a href="#">Settings</a>
+                    <a href="personal2.html">About Me</a>
+                    <a href="login.html">Sign Out</a>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+        <div id = "entire-container">
+          <div id="mySidenav" class="sidenav">
+          </div>
+
+            <div id="id00" class="modal">
+              <form class="modal-content animate">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id00').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+                  <label for="class_name"><b>Notebook Name</b></label>
+                  <input type="text" placeholder="Ex. Math 230" name="nbname" required>
+                </div>
+                  <div class="container">
+                  <button onclick="check2(this.form)" class="submitbtn">Submit</button>
+                </div>
+              </form>
+            </div>
+
+          <div id="main" class="dash">
+              <div class="contain2">
+                   <a href="othereditor1.html"><img id ="n0" class="avatar" src="notebook201.png" alt="notebook 1"></a>
+              </div>
+              <div class="contain3">
+                <a href="othereditor2.html"><img id ="n1" class="avatar" src="notebook212.png" alt="notebook 2"></a>
+              </div>
+              <div class="contain">
+                <a href="editor2.html"><img id ="n2" class="avatar" src="notebook318.png" alt="notebook 3"></a>
+              </div>
+              <div class="contain">
+                <img button onclick="document.getElementById('id00').style.display='block'"" style="width:auto;" id ="n0" class="avatar" src="add.png" alt="logo">
+                 <div button onclick="document.getElementById('id00').style.display='block'"" style="width:auto;" class="overlay">
+                 <div class="text">Create a Notebook</div>
+                </div>
+              </div>
+              <div class="contain2">
+                      <img id ="n4" class="avatar" src="add.png" alt="logo">
+              </div>
+              <div class="contain3">
+                     <img id = "n5" src="add.png" class="avatar" alt="Add a NoteBook">
+              </div>
+
+          </div>
+
+          <div class="sidenote">
+            <div id = "notecore" class="note">
+            <h2>Notifications</h2>
+            <div id="SharedwithChuck"> Ricky has shared a notebook <br>with you!
+              <a href="otheruserpage3.html">View Notebook</a>
+            </div>
+            <div id="SharedwithRicky"> You have shared a notebook <br>with Ricky!</div>
+            <div id="CommentRicky"> Ricky commented on a shared <br>notebook! <br>
+              "Thanks for sharing this with me!"</div>
+            <div id="CommentChuck"> You commented on a shared <br>notebook! </div>
+            </div>
+          </div>
+        </div>
+        <script src="otheruserpage.js"></script>
+        <script src="app.js"></script>
+      </body>
+</html>

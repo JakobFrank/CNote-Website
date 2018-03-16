@@ -2,35 +2,84 @@
 <html>
   <head>
     <title>Online Collaborative Text Editor</title>
-    <link href="otherapp.css" rel="stylesheet"></link>
+  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="app.css" rel="stylesheet"></link>
   </head>
-  <body>
-    <header class="header">
-      <h1 class="header_h1"><a href="javascript:history.back()"><img src="cnote.png" alt="cnote"></a></h1>
-      <ul>
-        <li> <button id = "Font">Font </button> </li>
-      	<li> <button id = "Bold">Bold</button></li>
-      	<li> <button id = "Ital">Italicize</button></li>
-      	<li> <button id = "Underline">Underline</button></li>
-      	<li> <button id = "Highlight">Highlight</button></li>
-      	<li> <button id = "Bullet Points">Bullet Points</button></li>
-      	<li> <button id = "Background Button" onclick="changeB()">Background</button></li>
-        <li> <button id = "Share Notebook" onclick="Share_Chuck()">Share</button></li>
-      </ul>
+  <body onload="Notifications()">
+     <div id = "overdash" class = "overdash">
+            <div id = "left" ><a href="javascript:history.back()"><img class="avatar" src="cnote.png" alt="logo"></a> </div>
+           <div id = "center">
+        <li> <button id = "Font" class = "btn">Font </button> </li>
+        <li> <button id = "Bold" class = "btn">Bold</button></li>
+        <li> <button id = "Ital" class = "btn">Italicize</button></li>
+        <li> <button id = "Underline" class = "btn">Underline</button></li>
+        <li> <button id = "Highlight" class = "btn">Highlight</button></li>
+        <li> <button id = "Bullet Points" class = "btn">Bullet Points</button></li>
+        <li> <button id = "Background_Button" onclick="changeB()" class = "btn">Background</button></li>
+         <li><button id = "Add_Comment" onclick="Add_Comment_Ricky()" class = "btn">Add Comment</button></li>
+        <li> <button id = "Share_Notebook" onclick="Share_Ricky()" class = "btn">Share</button></li>
+    </div>
+            <div id = "right">
+            <div class = "dropdown">
+              <img onclick="myFunction()" class="dropbtn" src="Account.png" alt="user">
+                  <div id="myDropdown" class ="dropdown-content">
+                    <a href="#">Settings</a>
+                    <a href="javascript:history.back()">Dashboard</a>
+                    <a href="login.html">Sign Out</a>
+                  </div>
+            </div>
+          </div>
 
-      <h2 class = "student_icon"><a href="personal2.html"><img src="Account.png" alt = "account"></a></h2>
-    </header>
+    <div id = "entire-container">
+      <div class = "empty">
+      </div>
     <div class="doc">
 
-      <div class="background-ribbon">
-        <button id = "Add_Comment" onclick="Add_Comment_Ricky()">Add Comment</button>
-      </div>
-
       <div class="text-editor"><h2 class="class-topic">Psych 201</h2>
-        <textarea placeholder = "Enter Text" rows = "75" cols = "112">
+        <textarea placeholder = "Enter Text">
+Tuesday 9/26/17
+15 question quiz on thursday, all true or false / multiple choice.
+Go over the lecture notes for the quiz, it will be helpful.
+
+Descriptive Statistics:
+Used to summarize and describe a set of data in a clear and convenient fashion
+Ex. GPA
+Inferential Statistics:
+Can't measure everyone, used to draw inferences about a larger group (population) based upon what is observed in a sample from that group.
+
+Samples: A subset of scores from a population
+
+Population: A collection of measurements that share a common characteristic 
+
+Random Sampling: helps eliminate bias in the samples (choosing participants)
+Random Assignment: everyone has an equal chance to be in any testing group (grouping participants) 
+
+Measurement Scales:
+	Four Properties:
+		Category
+			Observations assigned different number representing category
+		Ordinal Property
+			Can be used to measure those with least amount to most amount
+		Equal Intervals
+			1 unit difference remains constant
+		Absolute Zero Property
+			0 represents absence of something
+Quote of the Day “so zero has to mean zero?!?” - anonymous student 
+
         </textarea>
       </div>
-    </div>
+  </div>
+       <div class="sidenote">
+                  <div id = "notecore" class="note">
+                  <h2>Notifications</h2>
+                  <div id="SharedwithRicky" > Chuck has shared a notebook <br>with you! </div>
+                  <div id="SharedwithChuck"> You have shared a notebook <br>with Chuck! </div>
+                  <div id="CommentChuck"> Chuck commented on a shared <br>notebook! </div>
+                  <div id="CommentRicky"> You commented on a shared <br>notebook! </div>
+                  </div>
+            </div>
+        </div>
+<script src = "userpage.js"></script>
 <script src="app.js"></script>
   </body>
 </html>

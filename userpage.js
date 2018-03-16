@@ -23,7 +23,7 @@ function check(form)
 {
 if(form.nbname.value == "Math 230")
   {
-    window.open('userpage1.html')
+    window.location.href=('userpage1.html')
   }
  else
  {
@@ -35,7 +35,7 @@ function check2(form)
 {
 if(form.nbname.value == "CSD 318")
   {
-    window.open('userpage2.html')
+    window.location.href=('userpage2.html')
   }
  else
  {
@@ -45,7 +45,7 @@ if(form.nbname.value == "CSD 318")
 
 function Notifications() {
   element = document.getElementById("SharedwithRicky");
-  SharedwithRicky = localStorage.getItem("SharedwithRicky");
+  SharedwithRicky = sessionStorage.getItem("SharedwithRicky");
   if(SharedwithRicky) {
     element.style.display= "block";
   }
@@ -53,7 +53,7 @@ function Notifications() {
     element.style.display= "none";
   }
   element = document.getElementById("SharedwithChuck");
-  SharedwithChuck = localStorage.getItem("SharedwithChuck");
+  SharedwithChuck = sessionStorage.getItem("SharedwithChuck");
   if(SharedwithChuck) {
     element.style.display= "block";
   }
@@ -61,7 +61,7 @@ function Notifications() {
     element.style.display= "none";
   }
   element = document.getElementById("CommentChuck");
-  CommentChuck = localStorage.getItem("CommentChuck");
+  CommentChuck = sessionStorage.getItem("CommentChuck");
   if(CommentChuck) {
     element.style.display= "block";
   }
@@ -69,11 +69,29 @@ function Notifications() {
     element.style.display= "none";
   }
   element = document.getElementById("CommentRicky");
-  CommentRicky = localStorage.getItem("CommentRicky");
+  CommentRicky = sessionStorage.getItem("CommentRicky");
   if(CommentRicky) {
     element.style.display= "block";
   }
   else {
     element.style.display= "none";
+  }
+}
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
 }
