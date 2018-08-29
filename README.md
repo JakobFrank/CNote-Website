@@ -1,2 +1,2 @@
-# JakobFrank.github.io
+# CNote
 GitHub Page for CNote
